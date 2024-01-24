@@ -1,0 +1,48 @@
+{
+    "README":{
+       "METHOD_LINE1":"The method designates which repair method is used.",
+       "METHOD_LINE2":"All the method modules should be placed under 'repair' folder.",
+
+       "DATASET_LINE1":"The dataset designates which dataset is used",
+       "DATASET_LINE2":"All the dataset modules should be placed under 'dataset' folder",
+
+       "MODEL_LINE1":"The model designates which model is used",
+       "MODEL_LINE2":"All the model modules should be placed under 'model' folder",
+
+       "CUSTOM_OBJECTS_LINE1":"The custom_objects designates custom layer classes required to load model in this framework",
+
+       "KEYS":"The keys are option names",
+       "VALUES_LINE1":"The values are actual module names like 'package_name.class_name'",
+       "VALUES_LINE2":"e.g. 'arachne.arachne.Arachne' means importing 'repair.arachne.arachne' and generating Arachne's instance",
+       "VALUES_LINE3":"parent pkg phrase like 'dataset' or 'repair' is concatinated automatically"
+    },
+    "method":{
+        "Arachne":"arachne.arachne.Arachne",
+        "ArachneMOO":"arachnemoo.arachnemoo.ArachneMOO",
+        "DeepAlignMOO":"deepalignmoo.deepalignmoo.DeepAlignMOO",
+        "Athena":"athena.athena.Athena",
+        "DeepFault":"deepfault.deepfault.DeepFault",
+        "FedRep":"fedrep.fedrep.FedRep"
+    },
+    "dataset":{
+        "GTSRB":"gtsrb.gtsrb.GTSRB",
+        "BDD":"bdd.bdd.BDD",
+        "BDDObjects":"bdd_objects.bdd_objects.BDDObjects",
+        "Fashion-MNIST":"fashion_mnist.fashion_mnist.FashionMNIST",
+        "CIFAR-10":"cifar_10.cifar_10.CIFAR10"
+    },
+    "model":{
+        "base_cnn_model":"base.model.BaseCNNModel",
+        "vgg16_fine_tuning":"vgg16.model.VGG16FineTuningModel",
+        "vgg19_fine_tuning_model":"vgg19.model.VGG19FineTuningModel",
+        "keras_app":"keras_app.model.KerasModel",
+        "vit":"vit.model.VisionTransferModel",
+        "hydra":"hydra.model.HydraModel",
+        "hydra_head":"hydra_head.model.HydraHeadModel"
+    },
+    "custom_objects":{
+        "Combine":"model.hydra.model.Combine",
+        "Patches":"model.vit.model.Patches",
+        "PatchEncoder":"model.vit.model.PatchEncoder"
+    }
+}
